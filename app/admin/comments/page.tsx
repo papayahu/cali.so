@@ -54,25 +54,25 @@ export default async function AdminCommentsPage() {
 
   return (
     <>
-      <Title>评论</Title>
+      <Title>評論</Title>
 
       <Grid numItemsMd={2} numItemsLg={3} className="mt-6 gap-6">
         <Card>
-          <Text>今日评论数</Text>
+          <Text>今日評論數</Text>
 
           {commentsCount && 'today_count' in commentsCount && (
             <Metric>{commentsCount.today_count}</Metric>
           )}
         </Card>
         <Card>
-          <Text>本周评论数</Text>
+          <Text>本週評論數</Text>
           {commentsCount && 'this_week_count' in commentsCount && (
             <Metric>{commentsCount.this_week_count}</Metric>
           )}
         </Card>
 
         <Card>
-          <Text>本月评论数</Text>
+          <Text>本月評論數</Text>
           {commentsCount && 'this_month_count' in commentsCount && (
             <Metric>{commentsCount.this_month_count}</Metric>
           )}
@@ -84,7 +84,7 @@ export default async function AdminCommentsPage() {
           <TableHead>
             <TableRow>
               <TableHeaderCell>文章</TableHeaderCell>
-              <TableHeaderCell>评论内容</TableHeaderCell>
+              <TableHeaderCell>評論内容</TableHeaderCell>
             </TableRow>
           </TableHead>
           <TableBody>
