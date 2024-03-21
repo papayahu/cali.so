@@ -23,7 +23,7 @@ export default defineType({
     }),
     defineField({
       name: 'description',
-      title: '簡介',
+      title: '簡單介紹',
       type: 'text',
     }),
   ],
