@@ -14,7 +14,7 @@ import { Tweet } from '~/sanity/components/Tweet'
  */
 
 export default defineType({
-  title: '块级富文本',
+  title: '塊級富文本',
   name: 'blockContent',
   type: 'array',
   of: [
@@ -36,7 +36,7 @@ export default defineType({
         { title: '引用', value: 'blockquote' },
       ],
       lists: [
-        { title: '无序列表', value: 'bullet' },
+        { title: '無序列表', value: 'bullet' },
         { title: '有序列表', value: 'number' },
       ],
       // Marks let you mark up inline text in the Portable Text Editor
@@ -45,20 +45,20 @@ export default defineType({
         // preference or highlighting
         decorators: [
           { title: '加粗', value: 'strong' },
-          { title: '斜体', value: 'em' },
-          { title: '下划线', value: 'underline' },
-          { title: '删除线', value: 'strike-through' },
-          { title: '代码', value: 'code' },
+          { title: '斜體', value: 'em' },
+          { title: '底線', value: 'underline' },
+          { title: '刪除線', value: 'strike-through' },
+          { title: '程式碼', value: 'code' },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
           {
-            title: '链接',
+            title: '超連結',
             name: 'link',
             type: 'object',
             fields: [
               {
-                title: '链接',
+                title: '超連結',
                 name: 'href',
                 type: 'url',
               },
@@ -72,7 +72,7 @@ export default defineType({
     // as a block type.
     defineArrayMember({
       type: 'image',
-      title: '图片',
+      title: '圖片',
       options: { hotspot: true },
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
@@ -80,12 +80,12 @@ export default defineType({
         {
           name: 'alt',
           type: 'string',
-          title: '替代文本',
+          title: '替代文字',
         },
         {
           name: 'label',
           type: 'string',
-          title: '标注',
+          title: '標註',
         },
       ],
     }),
@@ -115,7 +115,7 @@ export default defineType({
     defineArrayMember({
       type: 'code',
       name: 'codeBlock',
-      title: '代码块',
+      title: '代碼塊',
       options: {
         withFilename: true,
       },
