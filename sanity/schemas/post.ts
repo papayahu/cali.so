@@ -43,13 +43,13 @@ export default defineType({
   fields: [
     defineField({
       name: 'title',
-      title: '标题',
+      title: '標題',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
-      title: '链接标识符',
+      title: '超連結標示符',
       type: 'slug',
       options: {
         source: 'title',
@@ -59,19 +59,19 @@ export default defineType({
     }),
     defineField({
       name: 'categories',
-      title: '分类',
+      title: '分類',
       type: 'array',
       of: [{ type: 'reference', to: { type: 'category' } }],
     }),
     defineField({
       name: 'publishedAt',
-      title: '发布时间',
+      title: '發佈時間',
       type: 'datetime',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'mainImage',
-      title: '主图',
+      title: '主圖',
       type: 'image',
       description: 'This image will be used for the preview (1200 x 675px)',
       options: {
@@ -81,7 +81,7 @@ export default defineType({
     }),
     defineField({
       name: 'description',
-      title: '简介',
+      title: '簡介',
       type: 'text',
       rows: 3,
       validation: (Rule) => Rule.required(),
@@ -93,7 +93,7 @@ export default defineType({
     }),
     defineField({
       name: 'readingTime',
-      title: '阅读时长（分钟）',
+      title: '閱讀時長（分鐘）',
       type: readingTimeType.name,
       validation: (Rule) => Rule.required(),
       options: {
@@ -102,7 +102,7 @@ export default defineType({
     }),
     defineField({
       name: 'mood',
-      title: '文章情绪',
+      title: '文章情緒',
       type: 'string',
       options: {
         list: [
