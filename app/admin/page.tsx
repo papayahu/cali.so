@@ -20,22 +20,22 @@ export default async function AdminPage() {
 
   return (
     <>
-      <Title>后台仪表盘</Title>
+      <Title>後台儀表盤</Title>
 
       <Grid numItemsMd={2} numItemsLg={3} className="mt-6 gap-6">
         <Card>
-          <Text>总评论</Text>
+          <Text>總評論</Text>
 
           {count && 'comments' in count && <Metric>{count.comments}</Metric>}
         </Card>
         <Card>
-          <Text>总订阅</Text>
+          <Text>總訂閱</Text>
           {count && 'subscribers' in count && (
             <Metric>{count.subscribers}</Metric>
           )}
         </Card>
         <Card>
-          <Text>总留言</Text>
+          <Text>總留言</Text>
           {count && 'guestbook' in count && <Metric>{count.guestbook}</Metric>}
         </Card>
       </Grid>
