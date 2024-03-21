@@ -32,7 +32,7 @@ export default async function AdminSubscribersPage() {
   return (
     <>
       <Title>
-        总订阅{' '}
+        總訂閱{' '}
         {typeof count === 'object' && 'total' in count && (
           <span>{count.total}</span>
         )}
@@ -43,7 +43,7 @@ export default async function AdminSubscribersPage() {
           <TableHead>
             <TableRow>
               <TableHeaderCell>Email</TableHeaderCell>
-              <TableHeaderCell>订阅时间</TableHeaderCell>
+              <TableHeaderCell>訂閱時間</TableHeaderCell>
             </TableRow>
           </TableHead>
           <TableBody>
