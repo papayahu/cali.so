@@ -17,7 +17,7 @@ export type Project = z.infer<typeof Project>
 
 export default defineType({
   name: 'project',
-  title: '项目',
+  title: '項目',
   type: 'document',
   icon: Layers3Icon,
   fields: [
@@ -29,17 +29,17 @@ export default defineType({
     }),
     defineField({
       name: 'url',
-      title: '链接',
+      title: '超連結',
       type: 'url',
     }),
     defineField({
       name: 'description',
-      title: '简介',
+      title: '簡介',
       type: 'text',
     }),
     defineField({
       name: 'icon',
-      title: '图片',
+      title: '圖片',
       type: 'image',
       options: {
         hotspot: true,
