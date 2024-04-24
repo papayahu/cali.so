@@ -133,4 +133,3 @@ export function Headline() {
     </div>
   )
 }
-<meta name="google-site-verification" content="XgcUNbUe8EE-BXvlXBWceFCavpLfUOKUW5eBLzDFE5U" />
