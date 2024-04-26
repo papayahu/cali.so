@@ -12,6 +12,13 @@ const title = '我的Mastodon隨記園地'
 const description =
   '一些生活碎片'
 
+const myTimeline = new MastodonTimeline.Init({
+instanceUrl: "https://mastodon.social",
+timelineType: "profile",
+userId: "112336750066396391",
+profileName: "@papayahu_",
+});
+
 export const metadata = {
   title,
   description,
