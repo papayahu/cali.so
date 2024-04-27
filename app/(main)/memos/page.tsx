@@ -17,26 +17,23 @@
   <!-- JavaScript -->
   <script src="app/(main)/memos/mastodon-timeline.umd.js"></script>
   <script>
-    // 定義 MastodonTimelineInit 介面
+    // Define MastodonTimelineInit interface
     interface MastodonTimelineInit {
-     instanceUrl: string;
-     timelineType: 'local' | 'profile' | 'hashtag';
-     userId?: string;
-     profileName?: string;
+      instanceUrl: string;
+      timelineType: 'local' | 'profile' | 'hashtag';
+      userId?: string;
+      profileName?: string;
     }
 
-    // 創建 MastodonTimelineInit 實例
+    // Create MastodonTimelineInit instance
     const myTimelineInit: MastodonTimelineInit = {
-     instanceUrl: "https://mastodon.social",
-     timelineType: "profile",
-     userId: "112336750066396391",
-     profileName: "@papayahu_",
+      instanceUrl: "https://mastodon.social",
+      timelineType: "profile",
+      userId: "112336750066396391",
+      profileName: "@papayahu_",
     };
 
-    // 引入 JavaScript 文件
-    import * as MastodonTimeline from 'mastodon-timeline';
-    
-    // 創建 MastodonTimeline 實例
+    // Create MastodonTimeline instance
     const myTimeline = new MastodonTimeline.Init(myTimelineInit);
   </script>
 </body>
