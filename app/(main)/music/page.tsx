@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
 import { RichLink } from '~/components/links/RichLink';
 import { Container } from '~/components/ui/Container';
