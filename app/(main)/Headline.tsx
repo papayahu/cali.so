@@ -1,5 +1,5 @@
 'use client'
-<meta name="google-site-verification" content="XgcUNbUe8EE-BXvlXBWceFCavpLfUOKUW5eBLzDFE5U" />
+
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
