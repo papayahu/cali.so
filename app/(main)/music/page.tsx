@@ -26,7 +26,7 @@ export const metadata = {
   },
 }
 
-export default function AskMeAnythingPage() {
+export default function MusicLightGallery() {
   return (
     <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
