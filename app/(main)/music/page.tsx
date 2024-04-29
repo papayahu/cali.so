@@ -1,6 +1,6 @@
 import Balancer from 'react-wrap-balancer';
-import { RichLink } from '~/components/links/RichLink';
 import { Container } from '~/components/ui/Container';
+import { RichLink } from '~/components/links/RichLink';
 
 const title = '音樂光廊';
 const description = '網易雲自用歌單分享';
