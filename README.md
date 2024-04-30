@@ -1,6 +1,6 @@
-## papayahu的網站「尋寶塢」
+## papayahu 的網站「尋寶塢」
 
-papayahu的網站「尋寶塢」[https://papayahu-so.vercel.app/](https://papayahu-so.vercel.app/) 的源代码。
+papayahu 的網站「尋寶塢」[https://papayahu-so.vercel.app/](https://papayahu-so.vercel.app/) 的源代码。
 
 需要其他服务商的环境变量才能正常运行，所以如果你想要在本地运行，需要自己配置。
 
