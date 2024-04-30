@@ -98,22 +98,22 @@ export function Headline() {
         }}
       >
         <SocialLink
-          href="/twitter"
+          href="https://twitter.com/tracyhu1205"
           aria-label="我的 Twitter"
           platform="twitter"
         />
         <SocialLink
-          href="/youtube"
+          href="https://www.youtube.com/@mapleleaf5470"
           aria-label="我的 YouTube"
           platform="youtube"
         />
         <SocialLink
-          href="/bilibili"
+          href="https://space.bilibili.com/382569491"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="/github"
+          href="https://github.com/papayahu"
           aria-label="我的 GitHub"
           platform="github"
         />
