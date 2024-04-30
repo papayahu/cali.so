@@ -35,7 +35,7 @@ function OCD() {
   return (
     <span className="group inline-flex items-center">
       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>嘻哈迷</span>
+      <span>音樂迷</span>
     </span>
   )
 }
@@ -80,10 +80,9 @@ export function Headline() {
         }}
       >
         <Balancer>
-          我是 Cali，
-          <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
-          创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
-          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
+          我是 Tracy，INFP，
+          <PeekabooLink href="https://papayahu-so.vercel.app">尋寶塢</PeekabooLink>
+          管理者。我热爱閱讀，音樂，Bujo，探索新鮮的事物，喜歡帶著好奇心在知識的海洋裡悠遊。
         </Balancer>
       </motion.p>
       <motion.div
@@ -99,34 +98,34 @@ export function Headline() {
         }}
       >
         <SocialLink
-          href="https://cali.so/twitter"
-          aria-label="我的推特"
+          href="/twitter"
+          aria-label="我的 Twitter"
           platform="twitter"
         />
         <SocialLink
-          href="https://cali.so/youtube"
+          href="/youtube"
           aria-label="我的 YouTube"
           platform="youtube"
         />
         <SocialLink
-          href="https://cali.so/bilibili"
+          href="/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://cali.so/github"
+          href="/github"
           aria-label="我的 GitHub"
           platform="github"
         />
-        <SocialLink
-          href="https://cali.so/tg"
+        {/*<SocialLink
+          href="/tg"
           aria-label="我的 Telegram"
           platform="telegram"
-        />
-        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
+        />*/}
+        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 訂閱" />
         <SocialLink
           href="mailto:hi@cali.so"
-          aria-label="我的邮箱"
+          aria-label="我的信箱"
           platform="mail"
         />
       </motion.div>
