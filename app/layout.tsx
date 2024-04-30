@@ -14,11 +14,11 @@ import { seo } from '~/lib/seo'
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | Cali Castle',
+    template: '%s | Tracy Hu',
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'Cali,Cali Castle,郭晓楠,佐玩,创始人,CEO,开发者,设计师,细节控,创新',
+  keywords: 'papayahu,Tracy Hu,探險家,養生黨,嘻哈迷,音樂迷,筆耕者,細節控,探索',
   manifest: '/site.webmanifest',
   robots: {
     index: true,
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | Cali Castle',
+      template: '%s | Tracy Hu',
     },
     description: seo.description,
-    siteName: 'Cali Castle',
+    siteName: 'Tracy Hu',
     locale: 'zh_CN',
     type: 'website',
-    url: 'https://cali.so',
+    url: 'https://papayahu-so.vercel.app',
   },
   twitter: {
-    site: '@thecalicastle',
-    creator: '@thecalicastle',
+    site: '@tracyhu1205',
+    creator: '@tracyhu1205',
     card: 'summary_large_image',
     title: seo.title,
     description: seo.description,
