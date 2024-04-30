@@ -6,16 +6,16 @@ import { Container } from '~/components/ui/Container'
 import { BlogPosts } from './BlogPosts'
 
 const description =
-  '写博客文章是我比较喜欢的沉淀分享方式，我希望能够把好用的技术知识传递给更多的人。我比较喜欢围绕着技术为主的话题，但是也会写一些非技术的话题，比如设计、创业、企业管理、生活随笔等等。'
+  '一些有趣、實用的軟體分享，希望大家都可以發現屬於自己的寶藏！'
 export const metadata = {
-  title: '我的博客',
+  title: '尋寶塢',
   description,
   openGraph: {
-    title: '我的博客',
+    title: '尋寶塢',
     description,
   },
   twitter: {
-    title: '我的博客',
+    title: '尋寶塢',
     description,
     card: 'summary_large_image',
   },
@@ -27,7 +27,7 @@ export default function BlogPage() {
     <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          欢迎光临我的博客
+          歡迎光臨尋寶塢
         </h1>
         <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
           <Balancer>{description}</Balancer>
