@@ -82,7 +82,7 @@ export function Headline() {
         <Balancer>
           我是 Tracy，INFP，
           <PeekabooLink href="https://papayahu-so.vercel.app">尋寶塢</PeekabooLink>
-          管理者。我热爱閱讀，音樂，Bujo，探索新鮮的事物，喜歡帶著好奇心在知識的海洋裡悠遊。
+          管理者。我熱愛閱讀、音樂、Bujo、探索新鮮的事物，喜歡帶著好奇心在知識的海洋裡悠遊。
         </Balancer>
       </motion.p>
       <motion.div
