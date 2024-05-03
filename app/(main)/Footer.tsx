@@ -90,7 +90,7 @@ async function LastVisitorInfo() {
     <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 md:justify-start">
       <CursorClickIcon className="h-4 w-4" />
       <span>
-        最近访訪客来自&nbsp;
+        最近訪客來自&nbsp;
         {[lastVisitor.city, lastVisitor.country].filter(Boolean).join(', ')}
       </span>
       <span className="font-medium">{lastVisitor.flag}</span>
