@@ -69,7 +69,7 @@ export function BlogPostCard({ post, views }: { post: Post; views: number }) {
 
             <span className="inline-flex items-center space-x-1">
               <HourglassIcon />
-              <span>{readingTime.toFixed(0)}分钟阅读</span>
+              <span>{readingTime.toFixed(0)}分鐘閱讀</span>
             </span>
           </span>
         </span>
