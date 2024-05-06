@@ -10,7 +10,7 @@ const NewGuestbookEmail = ({
   userFirstName = 'Cali',
   userLastName = 'Castle',
   userImageUrl = 'https://cali.so/icon.png',
-  commentContent = '*测试评论*\n- Wow wtf\n- Cool',
+  commentContent = '*測試評論*\n- Wow wtf\n- Cool',
 }: {
   link?: string | null
   userFirstName?: string | null
@@ -22,7 +22,7 @@ const NewGuestbookEmail = ({
     firstName: userFirstName,
     lastName: userLastName,
   })
-  const title = `有人在留言墙留言啦`
+  const title = `有人在留言牆留言啦`
 
   return (
     <Layout previewText={title}>
@@ -40,7 +40,7 @@ const NewGuestbookEmail = ({
           )}
         </Text>
         <Text className="text-[14px] leading-[24px] text-black">
-          <b>{user}</b>&nbsp;在留言墙留言：
+          <b>{user}</b>&nbsp;在留言牆留言：
         </Text>
       </Section>
 
