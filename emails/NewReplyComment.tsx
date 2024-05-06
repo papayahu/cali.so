@@ -6,13 +6,13 @@ import { Button, Heading, Hr, Img, Link, Section, Text } from './_components'
 import Layout from './Layout'
 
 const NewReplyCommentEmail = ({
-  postLink = 'https://cali.so',
-  postTitle = '测试文章 Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-  postImageUrl = 'https://cn.zolplay.com/api/og?title=测试文章',
+  postLink = 'https://papayahu-so.vercel.app',
+  postTitle = '測試文章 Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+  postImageUrl = 'https://cn.zolplay.com/api/og?title=測試文章',
   userFirstName = 'Cali',
   userLastName = 'Castle',
   userImageUrl = 'https://cali.so/icon.png',
-  commentContent = '*测试评论*\n- Wow wtf\n- Cool',
+  commentContent = '*測試評論*\n- Wow wtf\n- Cool',
 }: {
   postLink?: string | null
   postTitle?: string | null
@@ -26,7 +26,7 @@ const NewReplyCommentEmail = ({
     firstName: userFirstName,
     lastName: userLastName,
   })
-  const title = `👋 有人回复了你的评论`
+  const title = `👋 有人回覆了你的評論`
 
   return (
     <Layout previewText={title}>
@@ -57,7 +57,7 @@ const NewReplyCommentEmail = ({
             <Link href={postLink} className="font-bold underline">
               {postTitle}
             </Link>
-            」中回复了你：
+            」中回覆了你：
           </Text>
         )}
       </Section>
@@ -82,7 +82,7 @@ const NewReplyCommentEmail = ({
       </Section>
       {postLink && (
         <Text className="text-[14px] leading-[24px] text-black">
-          或者复制下面的链接到你的浏览器中进行访问：
+          或者複製下面的連結到你的瀏覽器中進行訪問：
           <br />
           <Link href={postLink} className="text-blue-600 no-underline">
             {postLink}
