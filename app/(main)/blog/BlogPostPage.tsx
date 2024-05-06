@@ -50,7 +50,7 @@ export function BlogPostPage({
           <Button
             href="/blog"
             variant="secondary"
-            aria-label="返回博客页面"
+            aria-label="返回博客頁面"
             className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0"
           >
             <UTurnLeftIcon className="h-8 w-8 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
@@ -161,12 +161,12 @@ export function BlogPostPage({
                   title={views?.toString()}
                 >
                   <CursorClickIcon />
-                  <span>{prettifyNumber(views ?? 0, true)}次点击</span>
+                  <span>{prettifyNumber(views ?? 0, true)}次點擊</span>
                 </span>
 
                 <span className="inline-flex items-center space-x-1.5">
                   <HourglassIcon />
-                  <span>{post.readingTime.toFixed(0)}分钟阅读</span>
+                  <span>{post.readingTime.toFixed(0)}分鐘閱讀</span>
                 </span>
               </motion.div>
             </header>
@@ -190,7 +190,7 @@ export function BlogPostPage({
         <section className="mb-12 mt-32">
           <h2 className="mb-6 flex items-center justify-center text-lg font-bold text-zinc-900 dark:text-zinc-100">
             <PencilSwooshIcon className="h-5 w-5 flex-none" />
-            <span className="ml-2">相关文章</span>
+            <span className="ml-2">相關文章</span>
           </h2>
 
           <div className="mt-6 grid grid-cols-1 justify-center gap-6 md:grid-cols-[repeat(auto-fit,75%)] lg:grid-cols-[repeat(auto-fit,45%)] lg:gap-8">
