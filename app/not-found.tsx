@@ -26,7 +26,7 @@ export default function NotFoundPage() {
           href="/"
           className="pointer-events-auto select-none text-xl font-bold text-white mix-blend-difference hover:underline"
         >
-          返回主页
+          返回主頁
         </Link>
       </div>
     </main>
