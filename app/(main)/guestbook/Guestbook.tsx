@@ -21,7 +21,7 @@ export function Guestbook(props: { messages?: GuestbookDto[] }) {
         <SignInButton mode="modal" redirectUrl={url(pathname).href}>
           <Button type="button">
             <UserArrowLeftIcon className="mr-1 h-5 w-5" />
-            登录后才可以留言噢
+            登錄後才可以留言噢
           </Button>
         </SignInButton>
       </SignedOut>
