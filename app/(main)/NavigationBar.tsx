@@ -152,7 +152,7 @@ function Mobile(props: PopoverProps<'div'>) {
             className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-gradient-to-b from-zinc-100/75 to-white p-8 ring-1 ring-zinc-900/5 dark:from-zinc-900/50 dark:to-zinc-900 dark:ring-zinc-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
-              <Popover.Button aria-label="关闭菜单" className="-m-1 p-1">
+              <Popover.Button aria-label="關閉菜單" className="-m-1 p-1">
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -169,7 +169,7 @@ function Mobile(props: PopoverProps<'div'>) {
                 </svg>
               </Popover.Button>
               <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                站内导航
+                站内導航
               </h2>
             </div>
             <nav className="mt-6">
