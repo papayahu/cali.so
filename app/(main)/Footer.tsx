@@ -55,7 +55,7 @@ async function TotalPageViews() {
   return (
     <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 md:justify-start">
       <UsersIcon className="h-4 w-4" />
-      <span title={`${Intl.NumberFormat('en-US').format(views)}次浏览`}>
+      <span title={`${Intl.NumberFormat('en-US').format(views)}次瀏覽`}>
         總瀏覽量&nbsp;
         <span className="font-medium">{prettifyNumber(views, true)}</span>
       </span>
