@@ -124,7 +124,7 @@ export function Headline() {
         />*/}
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 訂閱" />
         <SocialLink
-          href="mailto:hi@cali.so"
+          href="mailto:eggegg27@gmail.com"
           aria-label="我的信箱"
           platform="mail"
         />
