@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
       await resend.emails.send({
         from: emailConfig.from,
         to: env.SITE_NOTIFICATION_EMAIL_TO,
-        subject: '👋 有人刚刚在留言墙留言了',
+        subject: '👋 有人剛剛在留言牆留言了',
         react: NewGuestbookEmail({
           link: url(`/guestbook`).href,
           userFirstName: user.firstName,
