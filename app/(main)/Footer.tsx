@@ -12,6 +12,7 @@ import { subscribers } from '~/db/schema'
 import { env } from '~/env.mjs'
 import { prettifyNumber } from '~/lib/math'
 import { redis } from '~/lib/redis'
+import { GitHubIcon } from '~/assets'
 
 import { Newsletter } from './Newsletter'
 
@@ -118,7 +119,7 @@ export async function Footer() {
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
                 &copy; {new Date().getFullYear()} papayahu. 網站已開源：
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
-                  GitHub
+                  <GitHubIcon /> GitHub
                 </PeekabooLink>
               </p>
               <Links />
