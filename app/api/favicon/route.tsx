@@ -13,13 +13,13 @@ function getKey(url: string) {
 
 const faviconMapper: { [key: string]: string } = {
   '((?:zolplay.cn)|(?:zolplay.com)|(?:cn.zolplay.com))':
-    'https://papayahu-so.vercel.app/favicons/zolplay.png',
-  '(?:github.com)': 'https://papayahu-so.vercel.app/favicons/github.png',
+    'https://papayahu-so.vercel.app/public/favicons/zolplay.png',
+  '(?:github.com)': 'https://papayahu-so.vercel.app/public/favicons/github.png',
   '((?:t.co)|(?:twitter.com)|(?:x.com))':
-    'https://papayahu-so.vercel.app/favicons/twitter.png',
-  'coolshell.cn': 'https://papayahu-so.vercel.app/favicons/coolshell.png',
-  'vercel.com': 'https://papayahu-so.vercel.app/favicons/vercel.png',
-  'nextjs.org': 'https://papayahu-so.vercel.app/favicons/nextjs.png',
+    'https://papayahu-so.vercel.app/public/favicons/twitter.png',
+  'coolshell.cn': 'https://papayahu-so.vercel.app/public/favicons/coolshell.png',
+  'vercel.com': 'https://papayahu-so.vercel.app/public/favicons/vercel.png',
+  'nextjs.org': 'https://papayahu-so.vercel.app/public/favicons/nextjs.png',
   '(?:papayahu-so.vercel.app)': 'https://papayahu-so.vercel.app/public/android-chrome-192x192.png'
 }
 
@@ -64,7 +64,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.error()
   }
 
-  let iconUrl = 'https://papayahu-so.vercel.app/favicon_blank.png'
+  let iconUrl = 'https://papayahu-so.vercel.app/public/favicon_blank.png'
 
   try {
     const predefinedIcon = getPredefinedIconForUrl(url)
