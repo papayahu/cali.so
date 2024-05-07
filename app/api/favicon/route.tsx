@@ -63,7 +63,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.error()
   }
 
-  let iconUrl = 'https://github.com/papayahu/papayahu.so/blob/main/public/favicon_blank.png'
+  let iconUrl = 'https://cali.so/favicon_blank.png'
 
   try {
     const predefinedIcon = getPredefinedIconForUrl(url)
