@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   },
   description: seo.description,
   keywords: 'papayahu,Tracy Hu,探險家,養生黨,嘻哈迷,音樂迷,筆耕者,細節控,探索',
+  icons: {
+    icon: '/public/favicon-16x16.png',
+    shortcut: '/app/favicon.ico',
+    apple: '/app/apple-icon.png',
+  },
   manifest: '/site.webmanifest',
   robots: {
     index: true,
