@@ -4,15 +4,16 @@ import { type NextRequest, NextResponse } from 'next/server'
 
 import { ratelimit, redis } from '~/lib/redis'
 
-// 在这里定义 extractIconFromPage 函数
+// 在这里放置 extractIconFromPage 函数
 async function extractIconFromPage(url: string): Promise<string | undefined> {
   try {
-    // 在这里编写从页面内容中提取图标链接的逻辑
-    // 例如使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
+    // 编写从页面内容中提取图标链接的逻辑
+    // 使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
     // 如果找到了图标链接，则返回该链接，否则返回 undefined
+    return undefined; // 在这里返回图标链接或 undefined
   } catch (error) {
-    console.error('Error extracting icon from page:', error)
-    return undefined
+    console.error(error);
+    return undefined;
   }
 }
 
