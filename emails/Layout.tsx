@@ -39,7 +39,7 @@ export default function Layout({
                 src={`${emailConfig.baseUrl}/icon.png`}
                 width="24"
                 height="24"
-                alt="Cali"
+                alt="Tracy"
                 className="mx-auto my-0"
               />
               <Text className="text-center">
@@ -47,10 +47,10 @@ export default function Layout({
                   href="https://papayahu-so.vercel.app"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>Tracy Hu</strong>
                 </Link>
                 <br />
-                探險家、養生黨、嘻哈迷、筆耕者
+                探險家、養生黨、音樂迷、筆耕者
               </Text>
               <Text className="text-center">
                 <Link
