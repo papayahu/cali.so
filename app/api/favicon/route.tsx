@@ -13,13 +13,14 @@ function getKey(url: string) {
 
 const faviconMapper: { [key: string]: string } = {
   '((?:zolplay.cn)|(?:zolplay.com)|(?:cn.zolplay.com))':
-    'https://cali.so/favicons/zolplay.png',
-  '(?:github.com)': 'https://cali.so/favicons/github.png',
+    'https://papayahu-so.vercel.app/favicons/zolplay.png',
+  '(?:github.com)': 'https://papayahu-so.vercel.app/favicons/github.png',
   '((?:t.co)|(?:twitter.com)|(?:x.com))':
-    'https://cali.so/favicons/twitter.png',
-  'coolshell.cn': 'https://cali.so/favicons/coolshell.png',
-  'vercel.com': 'https://cali.so/favicons/vercel.png',
-  'nextjs.org': 'https://cali.so/favicons/nextjs.png',
+    'https://papayahu-so.vercel.app/favicons/twitter.png',
+  'coolshell.cn': 'https://papayahu-so.vercel.app/favicons/coolshell.png',
+  'vercel.com': 'https://papayahu-so.vercel.app/favicons/vercel.png',
+  'nextjs.org': 'https://papayahu-so.vercel.app/favicons/nextjs.png',
+  '(?:papayahu-so.vercel.app)': 'https://papayahu-so.vercel.app/public/android-chrome-192x192.png'
 }
 
 function getPredefinedIconForUrl(url: string): string | undefined {
@@ -63,7 +64,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.error()
   }
 
-  let iconUrl = 'https://cali.so/favicon_blank.png'
+  let iconUrl = 'https://papayahu-so.vercel.app/favicon_blank.png'
 
   try {
     const predefinedIcon = getPredefinedIconForUrl(url)
