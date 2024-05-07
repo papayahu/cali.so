@@ -94,7 +94,11 @@ export async function GET(req: NextRequest) {
         iconUrl = new URL(finalFavicon, new URL(`https://${url}`).href).href
       }
     }
-
+// 如果没有找到预定义图标 URL 并且从页面头部也没有提取到图标链接，则尝试从页面内容中提取
+if (!predefinedIcon && !cachedFavicon && !iconUrl) {
+  iconUrl = await extractIconFromPage(url) ?? 'https://papayahu-so.vercel.app/favicon_blank.png'
+}    
+    
     await redis.set(getKey(url), iconUrl, { ex: revalidate })
 
     return renderFavicon(iconUrl)
