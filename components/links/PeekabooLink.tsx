@@ -97,7 +97,7 @@ export function PeekabooLink({
               >
                 <Image
                   src={`/api/link-preview?url=${href}`}
-                  alt={`${href} 的预览图`}
+                  alt={`${href} 的預覽圖`}
                   className="pointer-events-none absolute left-0 top-0 h-full w-full rounded-xl object-cover"
                   placeholder="blur"
                   blurDataURL={makeBlurDataURL(16, 16)}
