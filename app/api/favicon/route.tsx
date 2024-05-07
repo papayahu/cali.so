@@ -4,19 +4,6 @@ import { type NextRequest, NextResponse } from 'next/server'
 
 import { ratelimit, redis } from '~/lib/redis'
 
-// 在这里放置 extractIconFromPage 函数
-async function extractIconFromPage(url: string): Promise<string | undefined> {
-  try {
-    // 编写从页面内容中提取图标链接的逻辑
-    // 使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
-    // 如果找到了图标链接，则返回该链接，否则返回 undefined
-    return undefined; // 在这里返回图标链接或 undefined
-  } catch (error) {
-    console.error(error);
-    return undefined;
-  }
-}
-
 export const runtime = 'edge'
 export const revalidate = 259200 // 3 days
 
@@ -26,13 +13,13 @@ function getKey(url: string) {
 
 const faviconMapper: { [key: string]: string } = {
   '((?:zolplay.cn)|(?:zolplay.com)|(?:cn.zolplay.com))':
-    'https://papayahu-so.vercel.app/favicons/zolplay.png',
-  '(?:github.com)': 'https://papayahu-so.vercel.app/favicons/github.png',
+    'https://cali.so/favicons/zolplay.png',
+  '(?:github.com)': 'https://cali.so/favicons/github.png',
   '((?:t.co)|(?:twitter.com)|(?:x.com))':
-    'https://papayahu-so.vercel.app/favicons/twitter.png',
-  'coolshell.cn': 'https://papayahu-so.vercel.app/favicons/coolshell.png',
-  'vercel.com': 'https://papayahu-so.vercel.app/favicons/vercel.png',
-  'nextjs.org': 'https://papayahu-so.vercel.app/favicons/nextjs.png',
+    'https://cali.so/favicons/twitter.png',
+  'coolshell.cn': 'https://cali.so/favicons/coolshell.png',
+  'vercel.com': 'https://cali.so/favicons/vercel.png',
+  'nextjs.org': 'https://cali.so/favicons/nextjs.png',
 }
 
 function getPredefinedIconForUrl(url: string): string | undefined {
@@ -76,7 +63,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.error()
   }
 
-  let iconUrl = 'https://papayahu-so.vercel.app/favicon_blank.png'
+  let iconUrl = 'https://cali.so/favicon_blank.png'
 
   try {
     const predefinedIcon = getPredefinedIconForUrl(url)
@@ -106,11 +93,6 @@ export async function GET(req: NextRequest) {
       if (finalFavicon) {
         iconUrl = new URL(finalFavicon, new URL(`https://${url}`).href).href
       }
-    }
-
-    // 如果没有找到预定义图标 URL 并且从页面头部也没有提取到图标链接，则尝试从页面内容中提取
-    if (!predefinedIcon && !cachedFavicon && !iconUrl) {
-      iconUrl = (await extractIconFromPage(url)) ?? 'https://papayahu-so.vercel.app/favicon_blank.png'
     }
 
     await redis.set(getKey(url), iconUrl, { ex: revalidate })
