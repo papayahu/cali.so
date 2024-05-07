@@ -9,9 +9,9 @@ const NewReplyCommentEmail = ({
   postLink = 'https://papayahu-so.vercel.app',
   postTitle = '測試文章 Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   postImageUrl = 'https://cn.zolplay.com/api/og?title=測試文章',
-  userFirstName = 'Cali',
-  userLastName = 'Castle',
-  userImageUrl = 'https://cali.so/icon.png',
+  userFirstName = 'Tracy',
+  userLastName = 'Hu',
+  userImageUrl = 'https://papayahu-so.vercel.app/icon.png',
   commentContent = '*測試評論*\n- Wow wtf\n- Cool',
 }: {
   postLink?: string | null
