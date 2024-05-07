@@ -8,6 +8,9 @@ async function extractIconFromPage(url: string): Promise<string | undefined> {
   // 在这里编写从页面内容中提取图标链接的逻辑
   // 可以使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
   // 如果找到了图标链接，则返回该链接，否则返回 undefined
+
+  // 在这个例子中，我们假设无论如何都无法找到图标链接，因此始终返回 undefined
+  return undefined;
 }
 export const runtime = 'edge'
 export const revalidate = 259200 // 3 days
