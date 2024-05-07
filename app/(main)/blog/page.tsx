@@ -1,4 +1,5 @@
 import Balancer from 'react-wrap-balancer'
+import Image from 'next/image'
 
 import { SocialLink } from '~/components/links/SocialLink'
 import { Container } from '~/components/ui/Container'
@@ -42,5 +43,38 @@ export default function BlogPage() {
     </Container>
   )
 }
+
+{favicon && faviconUrl && (
+  <span
+    className={clsxm(
+      'mr-px inline-flex translate-y-0.5',
+      hostsThatNeedInvertedFavicons.includes(hrefHost) && 'dark:invert'
+    )}
+  >
+    {faviconUrl ? (
+      <Image
+        src={faviconUrl}
+        alt=""
+        aria-hidden="true"
+        className="inline h-4 w-4 rounded"
+        width={16}
+        height={16}
+        unoptimized
+        priority={false}
+      />
+    ) : (
+      <Image
+        src="/public/favicon_blank.png" // 使用指定的png圖片
+        alt=""
+        aria-hidden="true"
+        className="inline h-4 w-4 rounded"
+        width={16}
+        height={16}
+        unoptimized
+        priority={false}
+      />
+    )}
+  </span>
+)}
 
 export const revalidate = 60
