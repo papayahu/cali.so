@@ -3,15 +3,19 @@ import { ImageResponse } from 'next/og'
 import { type NextRequest, NextResponse } from 'next/server'
 
 import { ratelimit, redis } from '~/lib/redis'
-// 在这里放置 extractIconFromPage 函数
-async function extractIconFromPage(url: string): Promise<string | undefined> {
-  // 在这里编写从页面内容中提取图标链接的逻辑
-  // 可以使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
-  // 如果找到了图标链接，则返回该链接，否则返回 undefined
 
-  // 在这个例子中，我们假设无论如何都无法找到图标链接，因此始终返回 undefined
-  return undefined;
+// 在这里定义 extractIconFromPage 函数
+async function extractIconFromPage(url: string): Promise<string | undefined> {
+  try {
+    // 在这里编写从页面内容中提取图标链接的逻辑
+    // 例如使用 cheerio 或其他 HTML 解析库来解析页面内容，然后查找可能的图标链接
+    // 如果找到了图标链接，则返回该链接，否则返回 undefined
+  } catch (error) {
+    console.error('Error extracting icon from page:', error)
+    return undefined
+  }
 }
+
 export const runtime = 'edge'
 export const revalidate = 259200 // 3 days
 
@@ -49,7 +53,7 @@ function renderFavicon(url: string) {
   return new ImageResponse(
     (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src={url} alt={`${url} 的圖標`} width={width} height={height} />
+      <img src={url} alt={`${url} 的图标`} width={width} height={height} />
     ),
     {
       width,
@@ -102,11 +106,12 @@ export async function GET(req: NextRequest) {
         iconUrl = new URL(finalFavicon, new URL(`https://${url}`).href).href
       }
     }
-// 如果没有找到预定义图标 URL 并且从页面头部也没有提取到图标链接，则尝试从页面内容中提取
-if (!predefinedIcon && !cachedFavicon && !iconUrl) {
-  iconUrl = await extractIconFromPage(url) ?? 'https://papayahu-so.vercel.app/favicon_blank.png'
-}    
-    
+
+    // 如果没有找到预定义图标 URL 并且从页面头部也没有提取到图标链接，则尝试从页面内容中提取
+    if (!predefinedIcon && !cachedFavicon && !iconUrl) {
+      iconUrl = (await extractIconFromPage(url)) ?? 'https://papayahu-so.vercel.app/favicon_blank.png'
+    }
+
     await redis.set(getKey(url), iconUrl, { ex: revalidate })
 
     return renderFavicon(iconUrl)
