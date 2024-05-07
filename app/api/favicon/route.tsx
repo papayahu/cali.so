@@ -13,14 +13,13 @@ function getKey(url: string) {
 
 const faviconMapper: { [key: string]: string } = {
   '((?:zolplay.cn)|(?:zolplay.com)|(?:cn.zolplay.com))':
-    'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/zolplay.png',
-  '(?:github.com)': 'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/github.png',
+    'https://cali.so/favicons/zolplay.png',
+  '(?:github.com)': 'https://cali.so/favicons/github.png',
   '((?:t.co)|(?:twitter.com)|(?:x.com))':
-    'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/twitter.png',
-  'coolshell.cn': 'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/coolshell.png',
-  'vercel.com': 'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/vercel.png',
-  'nextjs.org': 'https://github.com/papayahu/papayahu.so/blob/main/public/favicons/nextjs.png',
-  '(?:papayahu-so.vercel.app)': 'https://github.com/papayahu/papayahu.so/blob/main/public/android-chrome-192x192.png'
+    'https://cali.so/favicons/twitter.png',
+  'coolshell.cn': 'https://cali.so/favicons/coolshell.png',
+  'vercel.com': 'https://cali.so/favicons/vercel.png',
+  'nextjs.org': 'https://cali.so/favicons/nextjs.png',
 }
 
 function getPredefinedIconForUrl(url: string): string | undefined {
