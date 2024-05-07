@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
     description: seo.description,
     siteName: 'Tracy Hu',
-    locale: 'zh_CN',
+    locale: 'zh-Hant-TW',
     type: 'website',
     url: 'https://papayahu-so.vercel.app',
   },
@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <ClerkProvider localization={zhCN}>
       <html
-        lang="zh-CN"
+        lang="zh-Hant-TW"
         className={`${sansFont.variable} m-0 h-full p-0 font-sans antialiased`}
         suppressHydrationWarning
       >
